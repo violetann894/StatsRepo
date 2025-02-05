@@ -45,7 +45,9 @@ Multinomial Coefficients
 public class Main {
     public static void main(String[] args) {
         Person p = new Person();
-        System.out.println("Percentage to find a match: " + p.birthdayCheck(100000, 20));
+
+        //Added formating to string. Number is now a percentage and is capped at 3 decimal places.
+        System.out.printf("Percentage to find a match: %.3f", p.birthdayCheck(100000, 20)*100);
 
     }
 }
